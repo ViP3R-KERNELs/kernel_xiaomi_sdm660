@@ -1,3 +1,7 @@
+ccflags-y := -Werror $(call cc-disable-warning, logical-not-parentheses )
+ccflags-y += -Wno-error=parentheses-equality
+ccflags-y += -Wno-error=enum-conversion
+
 r8188eu-y :=				\
 		core/rtw_ap.o		\
 		core/rtw_cmd.o		\
